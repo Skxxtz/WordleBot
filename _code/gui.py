@@ -5,8 +5,8 @@ import time
 
 
 _os = 'Mac' if os.name == 'posix' else 'Windows'
-_url = 'C:/Users/sobj2/iCloudDrive/Documents/Programming/Python/wordl/{}' if _os == 'Windows' else '/Users/basti/Desktop/python/wordl/{}'
-allowed_words_url = _url.format('_assets/allowed_text.txt')
+url = "/".join(__file__.split("\\")[:-2])
+allowed_words_url = url + '/_assets/allowed_text.txt'
 print(allowed_words_url)
 
 

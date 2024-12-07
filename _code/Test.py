@@ -1,3 +1,5 @@
 import os
 
-print(os.getcwd())
+
+print("FILE:")
+print(__file__)

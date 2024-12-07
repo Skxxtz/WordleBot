@@ -4,9 +4,9 @@ import cProfile
 
 
 _os = 'Mac' if os.name == 'posix' else 'Windows'
-_url = '/Users/sobj2/iCloudDrive/Documents/Programming/python/wordl/{}' if _os == 'Windows' /{}'
-allowed_words_url = _url.format('_assets/allowed_text.txt')
 
+url = "/".join(__file__.split("\\")[:-2])
+allowed_words_url = url + '/_assets/allowed_text.txt'
 
 
 
